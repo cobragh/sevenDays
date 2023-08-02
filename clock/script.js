@@ -9,7 +9,18 @@ updateClock = () => {
   let getMinutes = now.getMinutes();
   let getHours = now.getHours();
 
-  digital.innerHTML = `${getHours.toString()}: ${getMinutes.toString()}: ${getSeconds.toString()}`;
+  let sDeg = (360 / 60) * getSeconds - 90;
+  let nDeg = (360 / 60) * getMinutes - 90;
+  let hDeg = (360 / 12) * getHours - 90;
+  s.style.transform = `rotate(${sDeg}deg)`;
+  m.style.transform = `rotate(${nDeg}deg)`;
+  h.style.transform = `rotate(${hDeg}deg)`;
+  digital.innerHTML = `${fixZero(getHours)}: ${fixZero(getMinutes)}: ${fixZero(
+    getSeconds
+  )}`;
 };
 
+fixZero = (time) => {
+  return time < 10 ? `0${time}` : time;
+};
 setInterval(updateClock, 1000);

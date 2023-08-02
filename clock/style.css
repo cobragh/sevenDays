@@ -1,0 +1,70 @@
+* {
+    text-transform: uppercase;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.title {
+    text-align: center;
+}
+.analogico {
+    margin: auto;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.ponteiros {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg); /* Rotaciona os ponteiros para iniciar do topo (12 horas) */
+  }
+  
+  .encaixe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+  }
+  
+  .p {
+    transform-origin: left;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border-radius: 50%;
+  }
+  
+  .p_s {
+    width: 90px;
+    height: 3px;
+    background-color: red;
+    transform: rotate(0deg);
+  }
+  
+  .p_m {
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    transform: rotate(-45deg);
+  }
+  
+  .p_h {
+    width: 70px;
+    height: 5px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+
+.digital {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+}
