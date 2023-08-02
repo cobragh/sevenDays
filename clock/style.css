@@ -1,17 +1,23 @@
 * {
     text-transform: uppercase;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #243447;
 }
 .title {
     text-align: center;
 }
+  
 .analogico {
     margin: auto;
     position: relative;
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 2px solid whitesmoke;
 }
 .ponteiros {
     margin: 0;
@@ -20,7 +26,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    transform: rotate(90deg); /* Rotaciona os ponteiros para iniciar do topo (12 horas) */
+    transform: rotate(90deg);
   }
   
   .encaixe {
@@ -64,7 +70,13 @@
 }
 
 .digital {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.date {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 25px;
 }
