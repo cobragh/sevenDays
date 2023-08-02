@@ -35,7 +35,3 @@ Este projeto pode ser uma ótima base para a prática de manipulação dinâmica
 ## Contribuição
 
 Sinta-se à vontade para contribuir com melhorias ou novas funcionalidades para este projeto. Basta abrir um pull request e descrever as alterações propostas.
-
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE). Sinta-se à vontade para usar, modificar e distribuir o código conforme os termos da licença.
